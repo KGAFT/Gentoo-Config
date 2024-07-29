@@ -6,3 +6,8 @@ app-text/openjade gcc-fast.conf
 dev-java/openjdk ccache-off.conf
 *ruby*/* gcc-fast.conf
 */*ruby* gcc-fast.conf
+dev-perl/Net-DBus gcc-fast.conf
+sys-auth/polkit gcc-safe.conf
+sys-apps/busybox gcc-fast.conf
+sys-kernel/gentoo-kernel gcc-fast.conf
+app-emulation/qemu gcc-fast.conf

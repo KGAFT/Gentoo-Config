@@ -1,27 +1,27 @@
 makeConf = open("etc/portage/make.conf", "r")
-Conf = open(input())
+Conf = open(input("Enter path for patches file: "))
 AlterContent = Conf.readlines()
-close(Conf)
+Conf.close()
 
 content = ""
 
 makeConfLines = makeConf.readlines()
-close(makeConf)
+makeConf.close()
 linesToAppend = []
 
 for line in AlterContent:
 	found = False
-	for dstLine in makeConfLines:
-		if(line.split("=")[0]==dstLine[0]):
-			dstLine = dstLine[0:dstLine.length()]+" "+line.split("\"")[1]+"\""
+	for i in range(0, len(makeConfLines)):
+		if(line.split("=")[0]==makeConfLines[i].split("=")[0]):
+			makeConfLines[i] = makeConfLines[i][0:len(makeConfLines[i])-2]+" "+line.split("\"")[1]+"\"\n"
 			found = True
 	if not found:
-		linesToApped.append(line)
+		linesToAppend.append(line)
 for line in makeConfLines:
-	content+=line+"\n"
+	content+=line
 for line in linesToAppend:
-	content+=line+"\n"
+	content+=line
 makeConf = open("etc/portage/make.conf", "w")
 makeConf.write(content)
 makeConf.flush()
-close(makeConf)
+makeConf.close()

@@ -1,8 +1,0 @@
-net-libs/webkit-gtk lowthreads.conf
-media-sound/sox gcc-safe.conf
-dev-libs/jansson gcc-fast.conf
-dev-perl/JSON-XS gcc-fast.conf
-app-text/openjade gcc-fast.conf
-dev-java/openjdk ccache-off.conf
-*ruby*/* gcc-fast.conf
-*/*ruby* gcc-fast.conf

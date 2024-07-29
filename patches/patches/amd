@@ -1,2 +1,0 @@
-VIDEO_CARDS="amdgpu radeonsi"
-USE="vaapi amdgpu radeonsi radeon rocm hip video_cards_amd"

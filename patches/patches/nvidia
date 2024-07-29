@@ -1,2 +1,0 @@
-USE="nvidia nvenc video_cards_nvidia cuda"
-VIDEO_CARDS="nvidia"

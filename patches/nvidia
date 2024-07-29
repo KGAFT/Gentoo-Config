@@ -1,0 +1,2 @@
+USE="nvidia nvenc video_cards_nvidia"
+VIDEO_CARDS="nvidia"

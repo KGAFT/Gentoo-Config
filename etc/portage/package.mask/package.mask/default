@@ -1,0 +1,4 @@
+net-libs/webkit-gtk
+sys-apps/systemd-utils
+sys-fs/static-dev
+dev-libs/kirigami-addons
